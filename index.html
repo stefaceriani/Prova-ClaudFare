@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Stefano Ceriani</title>
+    <meta name="description" content="Portfolio di Stefano Ceriani, developer e graphic designer.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="a42db02d-188a-405d-b2a7-e221ff20a0dd-Photoroom.png">
+</head>
+<body class="dark">
+
+<header>
+    <nav class="navbar">
+        <a href="index.html"><h1>Stefano Ceriani</h1></a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Progetti</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contatti</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <!-- LINK SOCIAL -->
+            <a href="https://www.instagram.com/stefa.ceriani/?link=https://www.google.com" target="_blank">instagram</a>
+            <a href="#" onclick="copiaMailto(); return false;"> Email </a>
+        </div>
+
+        <div>
+            <button id="lang-toggle">IT / EN</button>
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </nav>
+        <script>
+                function copiaMailto() {
+                const testo = "stefano.ceriani@blu.it";
+
+                navigator.clipboard.writeText(testo)
+                .then(() => {
+                 alert("Copiato negli appunti!");
+          })
+                .catch(err => {
+                console.error("Errore copia:", err);
+           });
+     }
+</script>
+
+</header>
+
+<main class="hero">
+    <div class="hero-text">
+        <h2>· Web Developer</h2>
+        <h105>&</h105>
+        <h2>· Graphic Designer</h2>
+        <br></br>
+        <pccr>Sono Stefano Ceriani,</pccr>
+        <pcc>Web Developer e Graphic Designer.</pcc>
+        <pc>Creo esperienze digitali coinvolgenti e soluzioni visive innovative.</pc>
+        
+ 
+    </div>
+
+    <div class="hero-image">
+        <!-- SPAZIO IMMAGINE -->
+         <img src="./a42db02d-188a-405d-b2a7-e221ff20a0dd-Photoroom.png" alt="Immagine di Stefano Ceriani">
+    </div>
+
+    <div class="hero-buttons">
+        <h3>Esplora il mio lavoro</h3>
+        <a href="projects.html" class="btn">Vedi i miei progetti</a>
+    </div>
+
+    <div class="proje">
+    </div>
+</main>
+
+<script src="theme-toggle.js"></script>
+<script src="lang-toggle.js"></script>
+</body>
+<footer>
+    <p>&copy; 2025 Stefano Ceriani. Tutti i diritti riservati.</p>
+</footer>
+</html>
