@@ -1,1 +1,0 @@
-vc-domain-verify=tre-5.odoo.com,b3753bee976f34333b39
